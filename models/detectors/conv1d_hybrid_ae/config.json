@@ -105,14 +105,14 @@
         "P6_STATE"
     ],
     "window_size": 60,
-    "stride": 5,
+    "stride": 1,
     "warmup": 120,
     "seed": 42,
     "epochs": 30,
-    "batch_size": 64,
+    "batch_size": 128,
     "loss_function": "MSELoss",
     "optimizer": "Adam",
-    "learning_rate": 0.001,
+    "learning_rate": 0.00023729585064585673,
     "train_shape": [
         19152,
         49
@@ -126,72 +126,72 @@
         49
     ],
     "train_cont_windows_shape": [
-        3784,
+        18916,
         60,
         23
     ],
     "val_cont_windows_shape": [
-        1232,
+        6148,
         60,
         23
     ],
     "test_cont_windows_shape": [
-        1232,
+        6149,
         60,
         23
     ],
     "train_disc_windows_shape": [
-        3784,
+        18916,
         60,
         26
     ],
     "val_disc_windows_shape": [
-        1232,
+        6148,
         60,
         26
     ],
     "test_disc_windows_shape": [
-        1232,
+        6149,
         60,
         26
     ],
     "X_train_shape": [
-        3784,
+        18916,
         23,
         60
     ],
     "X_val_shape": [
-        1232,
+        6148,
         23,
         60
     ],
     "X_test_shape": [
-        1232,
+        6149,
         23,
         60
     ],
     "X_train_disc_shape": [
-        3784,
+        18916,
         104
     ],
     "X_val_disc_shape": [
-        1232,
+        6148,
         104
     ],
     "X_test_disc_shape": [
-        1232,
+        6149,
         104
     ],
     "train_disc_summary_shape": [
-        3784,
+        18916,
         104
     ],
     "val_disc_summary_shape": [
-        1232,
+        6148,
         104
     ],
     "test_disc_summary_shape": [
-        1232,
+        6149,
         104
     ]
 }
