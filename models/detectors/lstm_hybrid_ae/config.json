@@ -1,21 +1,19 @@
 {
-    "model_name": "conv1d_hybrid_ae",
+    "model_name": "lstm_hybrid_ae",
     "best_params_from_optuna": {
-        "window_size": 60,
+        "window_size": 30,
         "stride": 1,
-        "n_conv_layers": 1,
-        "conv_channels_1": 64,
-        "conv_channels_2": 16,
-        "conv_channels_3": 8,
-        "kernel_size": 5,
+        "n_lstm_layers": 1,
+        "lstm_hidden": 128,
+        "latent_dim": 32,
         "disc_hidden_1": 64,
-        "disc_hidden_2": 16,
-        "fusion_hidden": 256,
-        "dropout": 0.01837443752413843,
-        "batch_size": 128,
-        "lr": 0.00023729585064585673,
-        "optimizer": "Adam",
-        "epochs": 30
+        "disc_hidden_2": 64,
+        "fusion_hidden": 64,
+        "dropout": 0.16736980565233767,
+        "batch_size": 64,
+        "lr": 0.0009519751000279115,
+        "optimizer": "AdamW",
+        "epochs": 40
     },
     "continuous_cols": [
         "AIT201.Pv",
@@ -54,21 +52,21 @@
         "MV503.Status",
         "MV504.Status",
         "P101.Status",
+        "P1_STATE",
         "P201.Status",
         "P203.Status",
         "P205.Status",
+        "P2_STATE",
         "P301.Status",
+        "P3_STATE",
         "P401.Status",
+        "P4_STATE",
         "P501.Status",
+        "P5_STATE",
         "P601.Status",
         "P602.Status",
-        "UV401.Status",
-        "P1_STATE",
-        "P2_STATE",
-        "P3_STATE",
-        "P4_STATE",
-        "P5_STATE",
-        "P6_STATE"
+        "P6_STATE",
+        "UV401.Status"
     ],
     "feature_cols": [
         "AIT201.Pv",
@@ -105,31 +103,31 @@
         "MV503.Status",
         "MV504.Status",
         "P101.Status",
+        "P1_STATE",
         "P201.Status",
         "P203.Status",
         "P205.Status",
+        "P2_STATE",
         "P301.Status",
+        "P3_STATE",
         "P401.Status",
+        "P4_STATE",
         "P501.Status",
+        "P5_STATE",
         "P601.Status",
         "P602.Status",
-        "UV401.Status",
-        "P1_STATE",
-        "P2_STATE",
-        "P3_STATE",
-        "P4_STATE",
-        "P5_STATE",
-        "P6_STATE"
+        "P6_STATE",
+        "UV401.Status"
     ],
-    "window_size": 60,
+    "window_size": 30,
     "stride": 1,
     "warmup": 120,
     "seed": 42,
-    "epochs": 30,
-    "batch_size": 128,
-    "loss_function": "MSELoss",
-    "optimizer": "Adam",
-    "learning_rate": 0.00023729585064585673,
+    "epochs": 40,
+    "batch_size": 64,
+    "loss_function": "L1Loss",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0009519751000279115,
     "train_shape": [
         19152,
         49
@@ -143,72 +141,72 @@
         49
     ],
     "train_cont_windows_shape": [
-        18916,
-        60,
+        19036,
+        30,
         23
     ],
     "val_cont_windows_shape": [
-        6148,
-        60,
+        6268,
+        30,
         23
     ],
     "test_cont_windows_shape": [
-        6149,
-        60,
+        6269,
+        30,
         23
     ],
     "train_disc_windows_shape": [
-        18916,
-        60,
+        19036,
+        30,
         26
     ],
     "val_disc_windows_shape": [
-        6148,
-        60,
+        6268,
+        30,
         26
     ],
     "test_disc_windows_shape": [
-        6149,
-        60,
+        6269,
+        30,
         26
     ],
     "X_train_shape": [
-        18916,
-        23,
-        60
+        19036,
+        30,
+        23
     ],
     "X_val_shape": [
-        6148,
-        23,
-        60
+        6268,
+        30,
+        23
     ],
     "X_test_shape": [
-        6149,
-        23,
-        60
+        6269,
+        30,
+        23
     ],
     "X_train_disc_shape": [
-        18916,
+        19036,
         104
     ],
     "X_val_disc_shape": [
-        6148,
+        6268,
         104
     ],
     "X_test_disc_shape": [
-        6149,
+        6269,
         104
     ],
     "train_disc_summary_shape": [
-        18916,
+        19036,
         104
     ],
     "val_disc_summary_shape": [
-        6148,
+        6268,
         104
     ],
     "test_disc_summary_shape": [
-        6149,
+        6269,
         104
     ]
 }
