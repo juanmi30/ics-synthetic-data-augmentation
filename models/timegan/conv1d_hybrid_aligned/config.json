@@ -126,7 +126,17 @@
         60,
         114
     ],
-    "synthetic_cont_shape": [
+    "synthetic_cont_scaled_shape": [
+        18916,
+        60,
+        23
+    ],
+    "synthetic_cont_physical_shape": [
+        18916,
+        60,
+        23
+    ],
+    "synthetic_cont_for_detector_shape": [
         18916,
         60,
         23
@@ -139,5 +149,7 @@
     "synthetic_disc_summary_shape": [
         18916,
         104
-    ]
+    ],
+    "continuous_scaling_for_timegan": "MinMaxScaler",
+    "continuous_scaling_for_detector": "StandardScaler"
 }
