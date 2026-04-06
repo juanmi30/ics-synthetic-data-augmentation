@@ -115,7 +115,7 @@
     "epochs_supervisor": 50,
     "epochs_joint": 100,
     "batch_size": 64,
-    "gamma": 5,
+    "gamma": 1,
     "train_timegan_shape": [
         18916,
         60,
