@@ -105,49 +105,49 @@
         "P6_STATE"
     ],
     "window_size": 60,
-    "stride": 1,
+    "stride": 5,
     "warmup": 120,
     "seed": 42,
-    "hidden_dim": 64,
+    "hidden_dim": 128,
     "latent_dim": 64,
     "num_layers": 3,
     "epochs_embedder": 50,
     "epochs_supervisor": 50,
     "epochs_joint": 100,
-    "batch_size": 64,
+    "batch_size": 128,
     "gamma": 1,
     "train_timegan_shape": [
-        18916,
+        3784,
         60,
         114
     ],
     "synthetic_windows_shape": [
-        18916,
+        3784,
         60,
         114
     ],
     "synthetic_cont_scaled_shape": [
-        18916,
+        3784,
         60,
         23
     ],
     "synthetic_cont_physical_shape": [
-        18916,
+        3784,
         60,
         23
     ],
     "synthetic_cont_for_detector_shape": [
-        18916,
+        3784,
         60,
         23
     ],
     "synthetic_disc_raw_shape": [
-        18916,
+        3784,
         60,
         26
     ],
     "synthetic_disc_summary_shape": [
-        18916,
+        3784,
         104
     ],
     "continuous_scaling_for_timegan": "MinMaxScaler",
