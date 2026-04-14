@@ -1,5 +1,6 @@
 {
-    "aligned_detector": "conv1d_hybrid_ae",
+    "version": "v4",
+    "key_fix": "Recovery sin Sigmoid + StandardScaler para TimeGAN",
     "continuous_cols": [
         "AIT201.Pv",
         "AIT202.Pv",
@@ -106,30 +107,29 @@
     ],
     "window_size": 60,
     "stride_detector": 1,
-    "stride_timegan": 20,
+    "stride_timegan": 5,
     "warmup": 120,
     "seed": 42,
-    "hidden_dim": 128,
+    "feature_dim_timegan": 23,
+    "discrete_synthesis": "empirical_sampling_persistence_0.95",
+    "hidden_dim": 64,
     "latent_dim": 64,
     "num_layers": 3,
-    "epochs_embedder": 300,
-    "epochs_supervisor": 200,
-    "epochs_joint": 500,
+    "epochs_embedder": 600,
+    "epochs_supervisor": 300,
+    "epochs_joint": 1000,
     "batch_size": 128,
     "gamma": 1,
-    "eta": 10,
+    "eta": 0.1,
     "lambda_r": 1.0,
     "lambda_s": 1.0,
-    "lambda_m": 1.0,
-    "train_timegan_shape": [
-        948,
-        60,
-        114
-    ],
-    "synthetic_windows_shape": [
-        948,
-        60,
-        114
-    ],
-    "auc_discriminability": 1.0
+    "lambda_m": 0.0,
+    "scaler_timegan": "StandardScaler",
+    "scaler_detector": "StandardScaler",
+    "recovery_output_activation": "None (linear)",
+    "train_windows": 3784,
+    "auc_discriminability": 1.0,
+    "embedder_mse_final": 0.0009807471972729626,
+    "g_loss_final": 2.1664512650720003,
+    "d_loss_final": 1.9197110800907529
 }
