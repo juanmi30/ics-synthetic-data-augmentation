@@ -1,6 +1,10 @@
 {
-    "version": "v4",
-    "key_fix": "Recovery sin Sigmoid + StandardScaler para TimeGAN",
+    "version": "v5",
+    "key_fixes": [
+        "Clip p1/p99 por feature antes de MinMaxScaler (elimina outliers AIT202/AIT203)",
+        "Discriminador sin threshold \u2014 siempre se entrena",
+        "Recovery lineal sin activacion (fix v4 mantenido)"
+    ],
     "continuous_cols": [
         "AIT201.Pv",
         "AIT202.Pv",
@@ -106,30 +110,29 @@
         "P6_STATE"
     ],
     "window_size": 60,
-    "stride_detector": 1,
     "stride_timegan": 5,
-    "warmup": 120,
-    "seed": 42,
-    "feature_dim_timegan": 23,
-    "discrete_synthesis": "empirical_sampling_persistence_0.95",
+    "clip_percentiles": [
+        1,
+        99
+    ],
+    "scaler_timegan": "clip_p1p99 + MinMaxScaler",
+    "scaler_detector": "StandardScaler",
+    "recovery_output": "linear (no activation)",
     "hidden_dim": 64,
     "latent_dim": 64,
     "num_layers": 3,
     "epochs_embedder": 600,
     "epochs_supervisor": 300,
-    "epochs_joint": 1000,
+    "epochs_joint": 1500,
     "batch_size": 128,
     "gamma": 1,
     "eta": 0.1,
     "lambda_r": 1.0,
     "lambda_s": 1.0,
     "lambda_m": 0.0,
-    "scaler_timegan": "StandardScaler",
-    "scaler_detector": "StandardScaler",
-    "recovery_output_activation": "None (linear)",
     "train_windows": 3784,
     "auc_discriminability": 1.0,
-    "embedder_mse_final": 0.0009807471972729626,
-    "g_loss_final": 2.1664512650720003,
-    "d_loss_final": 1.9197110800907529
+    "embedder_mse_final": 7.1418819625878e-05,
+    "g_loss_final": 5.866335835950128,
+    "d_loss_final": 1.471295611611728
 }
