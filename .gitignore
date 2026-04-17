@@ -1,3 +1,6 @@
 # Ignorar archivos npy y csv sintéticos en cualquier subnivel de models/timegan/
 models/timegan/**/synthetic_*.npy
 models/timegan/**/synthetic_*.csv
+# Ignore generated synth artifacts anywhere inside models/timegan
+models/timegan/**/synth_*.npy
+models/timegan/**/synth_*.csv

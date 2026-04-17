@@ -1,12 +1,12 @@
 {
-    "version": "v6",
+    "version": "v11",
     "key_fixes": [
-        "Eliminaci\u00f3n de features cuasi-constantes post-clip (FIT504, FIT601, etc.)",
-        "Clip p5/p95 en lugar de p1/p99 \u2014 reduce ceros del 12% a ~2%",
-        "Ratio G:D = 2:1 \u2014 elimina colapso c\u00edclico",
-        "Sin LayerNorm en Embedder \u2014 elimina inconsistencia h_real vs h_ref"
+        "stride=2 \u2014 m\u00e1s diversidad de datos (mode collapse fix)",
+        "Instance noise \u03c3=0.1\u21920.01 \u2014 reemplaza GP (velocidad fix, 8h\u219220min)",
+        "Sin ReduceLROnPlateau \u2014 evita dead equilibrium de v9",
+        "D_STEPS=1 \u2014 equilibrio G/D restaurado"
     ],
-    "timegan_cont_cols": [
+    "gan_cont_cols": [
         "AIT201.Pv",
         "AIT202.Pv",
         "AIT203.Pv",
@@ -15,14 +15,6 @@
         "AIT503.Pv",
         "AIT504.Pv",
         "DPIT301.Pv",
-        "FIT101.Pv",
-        "FIT201.Pv",
-        "FIT301.Pv",
-        "FIT401.Pv",
-        "FIT501.Pv",
-        "FIT502.Pv",
-        "FIT503.Pv",
-        "FIT601.Pv",
         "LIT101.Pv",
         "LIT301.Pv",
         "LIT401.Pv",
@@ -30,8 +22,16 @@
         "PIT502.Pv",
         "PIT503.Pv"
     ],
-    "quasi_constant_removed": [
-        "FIT504.Pv"
+    "fit_cols": [
+        "FIT101.Pv",
+        "FIT201.Pv",
+        "FIT301.Pv",
+        "FIT401.Pv",
+        "FIT501.Pv",
+        "FIT502.Pv",
+        "FIT503.Pv",
+        "FIT504.Pv",
+        "FIT601.Pv"
     ],
     "continuous_cols_detector": [
         "AIT201.Pv",
@@ -87,32 +87,29 @@
         "P6_STATE"
     ],
     "window_size": 60,
-    "stride_timegan": 5,
-    "clip_percentiles": [
-        5,
-        95
-    ],
-    "scaler_timegan": "clip_p5p95 + MinMaxScaler",
-    "recovery_output": "linear",
-    "embedder_layernorm": false,
+    "stride_timegan": 2,
+    "scaler": "QuantileTransformer(n_quantiles=1000, uniform)",
+    "feature_dim": 14,
     "hidden_dim": 64,
     "latent_dim": 64,
     "num_layers": 3,
     "G_STEPS": 2,
     "D_STEPS": 1,
+    "gamma": 0.5,
+    "eta": 0.1,
+    "FM_WEIGHT": 0.5,
+    "noise_sigma_init": 0.1,
+    "noise_sigma_final": 0.01,
     "epochs_embedder": 600,
     "epochs_supervisor": 300,
     "epochs_joint": 1500,
     "batch_size": 128,
-    "gamma": 1,
-    "eta": 0.1,
-    "lambda_r": 1.0,
-    "lambda_s": 1.0,
-    "train_windows": 3784,
-    "auc_discriminability": 1.0,
-    "embedder_mse_final": 9.337802751768573e-05,
-    "g_loss_final": 2.1972848464702737,
-    "d_loss_final": 1.9097212347491035,
-    "diff_medias": 0.27775976061820984,
-    "diff_stds": 0.36005377769470215
+    "train_windows": 9460,
+    "embedder_mse": 0.00012920245851951408,
+    "g_final": 1.375978990776898,
+    "d_final": 1.6820171646875879,
+    "spikes": 0,
+    "auc": 1.0,
+    "diff_medias": 0.13021934032440186,
+    "diff_stds": 0.13891610503196716
 }
