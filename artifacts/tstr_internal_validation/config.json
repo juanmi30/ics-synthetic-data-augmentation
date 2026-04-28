@@ -1,0 +1,40 @@
+{
+    "validation_type": "internal_unsupervised",
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ],
+    "window_size": 60,
+    "stride": 5,
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "timegan_model_dir": "D:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\models\\timegan\\conv1d_hybrid_aligned_v21_clean",
+    "match_synth_to_real": true,
+    "x_train_real_shape": [
+        3784,
+        49,
+        60
+    ],
+    "x_train_synth_used_shape": [
+        3784,
+        49,
+        60
+    ],
+    "x_train_mixed_shape": [
+        7568,
+        49,
+        60
+    ],
+    "x_val_real_shape": [
+        1232,
+        49,
+        60
+    ],
+    "x_test_real_shape": [
+        1232,
+        49,
+        60
+    ]
+}
