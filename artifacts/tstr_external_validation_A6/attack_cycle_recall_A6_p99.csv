@@ -1,0 +1,16 @@
+scenario,attack_cycle,n_windows,detected,attack_recall,mean_score
+real_only,ciclo_1,25,0,0.0,0.159147247672081
+real_only,ciclo_2,25,8,0.32,0.4053337872028351
+real_only,ciclo_3,25,0,0.0,0.2686217427253723
+real_only,ciclo_4,25,0,0.0,0.2115439921617508
+real_only,ciclo_5,25,0,0.0,0.2568827271461487
+synthetic_only,ciclo_1,25,0,0.0,0.18946495652198792
+synthetic_only,ciclo_2,25,7,0.28,1.5670082569122314
+synthetic_only,ciclo_3,25,0,0.0,0.2451203465461731
+synthetic_only,ciclo_4,25,0,0.0,0.17770303785800934
+synthetic_only,ciclo_5,25,0,0.0,0.2536812722682953
+real_plus_synthetic,ciclo_1,25,0,0.0,0.1293022185564041
+real_plus_synthetic,ciclo_2,25,7,0.28,0.3372038006782532
+real_plus_synthetic,ciclo_3,25,0,0.0,0.13967855274677277
+real_plus_synthetic,ciclo_4,25,0,0.0,0.14256292581558228
+real_plus_synthetic,ciclo_5,25,0,0.0,0.1302298903465271

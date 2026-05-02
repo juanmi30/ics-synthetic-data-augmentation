@@ -1,0 +1,28 @@
+{
+    "validation_type": "external_supervised_A6",
+    "dataset": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A6_OTDataset_Dec_19\\Dec2019_labeled.csv",
+    "train_dataset": "SWaT A7 Jun 2020",
+    "models_dir": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\models\\detectors\\conv1d_tstr_internal",
+    "window_size": 60,
+    "stride": 5,
+    "n_windows_total": 2629,
+    "n_attack_windows": 238,
+    "n_normal_windows": 2391,
+    "attack_cycles": 5,
+    "primary_tau": "p99",
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ],
+    "fixes_applied": [
+        "scaler_cont.pkl",
+        "disc_max.pkl",
+        "tau_dict.json",
+        "config.json para SCENARIOS",
+        "pd.Series.reindex disc_max",
+        "Arquitectura Conv1D+MaxPool",
+        "model_state.pt",
+        "DataLoader+TensorDataset"
+    ]
+}

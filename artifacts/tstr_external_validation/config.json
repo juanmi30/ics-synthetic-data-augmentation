@@ -1,0 +1,18 @@
+{
+    "validation_type": "external_supervised",
+    "a12_labeled_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A12_OTDataset_Mar_26\\11-Mar-2026_0900_1700_labeled.csv",
+    "models_dir": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\models\\detectors\\conv1d_tstr_internal",
+    "internal_artifacts_dir": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\artifacts\\tstr_internal_validation",
+    "window_size": 60,
+    "stride": 5,
+    "primary_label_strategy": "any",
+    "primary_tau_name": "p99",
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ],
+    "n_windows": 5759,
+    "n_attack_windows_any": 744,
+    "n_normal_windows_any": 5015
+}

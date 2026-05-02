@@ -1,0 +1,115 @@
+{
+    "raw_data_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\raw\\SWaT.A12_OTDataset_Mar_26\\11-Mar-2026_0900_1700.csv",
+    "attack_schedule_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\raw\\SWaT.A12_OTDataset_Mar_26\\ataques_a12_data.csv",
+    "labeled_output_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A12_OTDataset_Mar_26\\11-Mar-2026_0900_1700_labeled.csv",
+    "schedule_output_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A12_OTDataset_Mar_26\\ataques_a12_data_parsed.csv",
+    "dataset_start": "2026-03-11 09:00:00",
+    "dataset_end": "2026-03-11 17:00:59",
+    "total_rows": 28860,
+    "normal_rows": 25740,
+    "attack_rows": 3120,
+    "attack_ratio": 0.10810810810810811,
+    "interval_convention": "start <= t_stamp < end",
+    "n_attacks": 11,
+    "matched_rows_by_attack": [
+        {
+            "attack_id": 1,
+            "attack_name": "Stage 5 Valve Manipulation — MV503/504 Open, MV501/502 Close",
+            "start_datetime": "2026-03-11 13:00:00",
+            "end_datetime": "2026-03-11 13:05:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "MV501–504"
+        },
+        {
+            "attack_id": 2,
+            "attack_name": "Stage 1 Flow Disruption — MV101 Open, P101 & P102 Stop",
+            "start_datetime": "2026-03-11 13:40:00",
+            "end_datetime": "2026-03-11 13:45:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "MV101, P101, P102"
+        },
+        {
+            "attack_id": 3,
+            "attack_name": "Florida Water Plant Scenario — Dosing Pump Activation & Sensor Spoofing",
+            "start_datetime": "2026-03-11 14:20:00",
+            "end_datetime": "2026-03-11 14:25:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "P201–P206, MV201"
+        },
+        {
+            "attack_id": 4,
+            "attack_name": "Tank Overflow via LIT101 Spoofing — Schneider Demo Attack 01",
+            "start_datetime": "2026-03-11 14:30:00",
+            "end_datetime": "2026-03-11 14:35:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "LIT101"
+        },
+        {
+            "attack_id": 5,
+            "attack_name": "Stage 5 Valve Manipulation — MV503/504 Open, MV501/502 Close (Repeat)",
+            "start_datetime": "2026-03-11 14:40:00",
+            "end_datetime": "2026-03-11 14:45:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "MV501–504"
+        },
+        {
+            "attack_id": 6,
+            "attack_name": "Tank Overflow via LIT101 Spoofing — Schneider Demo Attack 01",
+            "start_datetime": "2026-03-11 15:00:00",
+            "end_datetime": "2026-03-11 15:02:00",
+            "duration_seconds": 120,
+            "matched_rows": 120,
+            "primary_targets": "LIT101"
+        },
+        {
+            "attack_id": 7,
+            "attack_name": "Stage 2 Parallel Pump Override — MV201 Open, P101 & P102 Run",
+            "start_datetime": "2026-03-11 15:02:00",
+            "end_datetime": "2026-03-11 15:07:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "MV201, P101, P102"
+        },
+        {
+            "attack_id": 8,
+            "attack_name": "Reverse Osmosis Backwash Diversion — MV302 Close, MV303 Open",
+            "start_datetime": "2026-03-11 15:20:00",
+            "end_datetime": "2026-03-11 15:25:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "MV302, MV303"
+        },
+        {
+            "attack_id": 9,
+            "attack_name": "Forced Backwash Trigger via DPIT301 Spoofing — Ensign Pre-UAT Attack 1",
+            "start_datetime": "2026-03-11 15:45:00",
+            "end_datetime": "2026-03-11 15:50:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "DPIT301"
+        },
+        {
+            "attack_id": 10,
+            "attack_name": "Multi-Value Level Oscillation — LIT601 Spoofing Sequence — Ensign Pre-UAT Attack 3",
+            "start_datetime": "2026-03-11 16:10:00",
+            "end_datetime": "2026-03-11 16:15:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "LIT601"
+        },
+        {
+            "attack_id": 11,
+            "attack_name": "AIT402 High-Value Spoof Start – Using script",
+            "start_datetime": "2026-03-11 16:35:00",
+            "end_datetime": "2026-03-11 16:40:00",
+            "duration_seconds": 300,
+            "matched_rows": 300,
+            "primary_targets": "AIT402"
+        }
+    ]
+}

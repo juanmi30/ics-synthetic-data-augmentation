@@ -1,0 +1,13 @@
+strategy,scenario,precision,recall,f1,balanced_accuracy,fpr
+any,real_only,0.3333,0.0378,0.0679,0.5151,0.0075
+any,synthetic_only,0.3333,0.0378,0.0679,0.5151,0.0075
+any,real_plus_synthetic,0.3077,0.0336,0.0606,0.513,0.0075
+ratio_10,real_only,0.3333,0.0395,0.0706,0.516,0.0075
+ratio_10,synthetic_only,0.3333,0.0395,0.0706,0.516,0.0075
+ratio_10,real_plus_synthetic,0.3077,0.0351,0.063,0.5138,0.0075
+ratio_20,real_only,0.3333,0.0419,0.0744,0.5172,0.0075
+ratio_20,synthetic_only,0.3333,0.0419,0.0744,0.5172,0.0075
+ratio_20,real_plus_synthetic,0.3077,0.0372,0.0664,0.5149,0.0075
+ratio_50,real_only,0.3333,0.0495,0.0861,0.521,0.0074
+ratio_50,synthetic_only,0.3333,0.0495,0.0861,0.521,0.0074
+ratio_50,real_plus_synthetic,0.3077,0.044,0.0769,0.5183,0.0074

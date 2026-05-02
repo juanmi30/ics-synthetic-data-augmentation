@@ -1,0 +1,12 @@
+start_time,end_time,attack_name,attack_id
+10:05,12:29,Normal / Exfiltration,0
+12:30,12:33,Disrupt Sensor and Actuator (Burst 1),1
+12:33,12:43,Normal (sleep),0
+12:43,12:46,Disrupt Sensor and Actuator (Burst 2),1
+12:46,12:56,Normal,0
+12:56,12:59,Disrupt Sensor and Actuator (Burst 3),1
+12:59,13:09,Normal,0
+13:09,13:12,Disrupt Sensor and Actuator (Burst 4),1
+13:12,13:22,Normal,0
+13:22,13:25,Disrupt Sensor and Actuator (Burst 5),1
+13:25,13:45,Normal,0

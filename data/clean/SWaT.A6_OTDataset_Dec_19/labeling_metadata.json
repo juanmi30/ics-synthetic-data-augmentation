@@ -1,0 +1,127 @@
+{
+    "raw_data_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\raw\\SWaT.A6_OTDataset_Dec_19\\Dec2019.xlsx",
+    "attack_schedule_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\raw\\SWaT.A6_OTDataset_Dec_19\\etiquetado_dataset_A6.csv",
+    "labeled_output_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A6_OTDataset_Dec_19\\Dec2019_labeled.csv",
+    "schedule_output_path": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A6_OTDataset_Dec_19\\etiquetado_dataset_A6_parsed.csv",
+    "dataset_start": "2019-12-06 10:05:00",
+    "dataset_end": "2019-12-06 13:45:00",
+    "total_rows": 13201,
+    "normal_rows": 12301,
+    "attack_rows": 900,
+    "attack_ratio": 0.06817665328384213,
+    "interval_convention": "start <= t_stamp < end",
+    "attack_definition": "attack_id/status == 1 in etiquetado_dataset_A6.csv",
+    "expected_attack_seconds_from_schedule": 900,
+    "matched_rows_by_interval": [
+        {
+            "start_time": "10:05",
+            "end_time": "12:29",
+            "attack_name": "Normal / Exfiltration",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 10:05:00",
+            "end_datetime": "2019-12-06 12:29:00",
+            "duration_seconds": 8640,
+            "matched_rows": 8640
+        },
+        {
+            "start_time": "12:30",
+            "end_time": "12:33",
+            "attack_name": "Disrupt Sensor and Actuator (Burst 1)",
+            "attack_id": 1,
+            "start_datetime": "2019-12-06 12:30:00",
+            "end_datetime": "2019-12-06 12:33:00",
+            "duration_seconds": 180,
+            "matched_rows": 180
+        },
+        {
+            "start_time": "12:33",
+            "end_time": "12:43",
+            "attack_name": "Normal (sleep)",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 12:33:00",
+            "end_datetime": "2019-12-06 12:43:00",
+            "duration_seconds": 600,
+            "matched_rows": 600
+        },
+        {
+            "start_time": "12:43",
+            "end_time": "12:46",
+            "attack_name": "Disrupt Sensor and Actuator (Burst 2)",
+            "attack_id": 1,
+            "start_datetime": "2019-12-06 12:43:00",
+            "end_datetime": "2019-12-06 12:46:00",
+            "duration_seconds": 180,
+            "matched_rows": 180
+        },
+        {
+            "start_time": "12:46",
+            "end_time": "12:56",
+            "attack_name": "Normal",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 12:46:00",
+            "end_datetime": "2019-12-06 12:56:00",
+            "duration_seconds": 600,
+            "matched_rows": 600
+        },
+        {
+            "start_time": "12:56",
+            "end_time": "12:59",
+            "attack_name": "Disrupt Sensor and Actuator (Burst 3)",
+            "attack_id": 1,
+            "start_datetime": "2019-12-06 12:56:00",
+            "end_datetime": "2019-12-06 12:59:00",
+            "duration_seconds": 180,
+            "matched_rows": 180
+        },
+        {
+            "start_time": "12:59",
+            "end_time": "13:09",
+            "attack_name": "Normal",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 12:59:00",
+            "end_datetime": "2019-12-06 13:09:00",
+            "duration_seconds": 600,
+            "matched_rows": 600
+        },
+        {
+            "start_time": "13:09",
+            "end_time": "13:12",
+            "attack_name": "Disrupt Sensor and Actuator (Burst 4)",
+            "attack_id": 1,
+            "start_datetime": "2019-12-06 13:09:00",
+            "end_datetime": "2019-12-06 13:12:00",
+            "duration_seconds": 180,
+            "matched_rows": 180
+        },
+        {
+            "start_time": "13:12",
+            "end_time": "13:22",
+            "attack_name": "Normal",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 13:12:00",
+            "end_datetime": "2019-12-06 13:22:00",
+            "duration_seconds": 600,
+            "matched_rows": 600
+        },
+        {
+            "start_time": "13:22",
+            "end_time": "13:25",
+            "attack_name": "Disrupt Sensor and Actuator (Burst 5)",
+            "attack_id": 1,
+            "start_datetime": "2019-12-06 13:22:00",
+            "end_datetime": "2019-12-06 13:25:00",
+            "duration_seconds": 180,
+            "matched_rows": 180
+        },
+        {
+            "start_time": "13:25",
+            "end_time": "13:45",
+            "attack_name": "Normal",
+            "attack_id": 0,
+            "start_datetime": "2019-12-06 13:25:00",
+            "end_datetime": "2019-12-06 13:45:00",
+            "duration_seconds": 1200,
+            "matched_rows": 1200
+        }
+    ]
+}

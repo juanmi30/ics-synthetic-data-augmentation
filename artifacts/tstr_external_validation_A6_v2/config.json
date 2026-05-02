@@ -1,0 +1,23 @@
+{
+    "version": "v2_optimal_threshold",
+    "dataset": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A6_OTDataset_Dec_19\\Dec2019_labeled.csv",
+    "train_dataset": "SWaT A7 Jun 2020",
+    "window_size": 60,
+    "stride": 5,
+    "n_windows": 2629,
+    "n_attack": 238,
+    "n_normal": 2391,
+    "threshold_criteria": [
+        "\u03c4_p90_calib",
+        "\u03c4_p95_calib",
+        "\u03c4_p99_calib",
+        "\u03c4_youden",
+        "\u03c4_f1_max",
+        "\u03c4_balanced_acc"
+    ],
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ]
+}
