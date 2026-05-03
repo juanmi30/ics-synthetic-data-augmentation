@@ -1,0 +1,18 @@
+{
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ],
+    "window_size": 30,
+    "stride": 5,
+    "epochs": 60,
+    "batch_size": 64,
+    "lr": 0.001,
+    "dataset": "SWaT A12 Mar 2026",
+    "n_train_real": 3069,
+    "n_synth_used": 3069,
+    "n_val": 1019,
+    "n_test": 1019,
+    "input_channels": 62
+}

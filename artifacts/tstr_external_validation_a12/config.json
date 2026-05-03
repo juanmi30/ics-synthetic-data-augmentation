@@ -1,0 +1,24 @@
+{
+    "version": "A12_external_v1",
+    "dataset": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A12_OTDataset_Mar_26\\11-Mar-2026_0900_1700_labeled.csv",
+    "train_dataset": "SWaT A12 Mar 2026 (mismo CSV, label=0)",
+    "window_size": 30,
+    "stride": 5,
+    "n_windows_total": 5767,
+    "n_attack_windows": 674,
+    "n_normal_windows": 5093,
+    "n_attack_types": 11,
+    "scenarios": [
+        "real_only",
+        "synthetic_only",
+        "real_plus_synthetic"
+    ],
+    "threshold_criteria": [
+        "tau_p90_calib",
+        "tau_p95_calib",
+        "tau_p99_calib",
+        "tau_youden",
+        "tau_f1_max",
+        "tau_balanced_acc"
+    ]
+}
