@@ -208,9 +208,9 @@
         "g_loss_final": 1.928325579716609,
         "d_loss_final": 1.5757917349155133,
         "spikes_g35": 828,
-        "diff_medias_qt": 0.09992097318172455,
-        "diff_stds_qt": 0.10664519667625427,
+        "diff_medias_qt": 0.08684977144002914,
+        "diff_stds_qt": 0.09799544513225555,
         "auc_rf": 1.0,
-        "rf_importancia_max": 0.06585197964228569
+        "rf_importancia_max": 0.0659398718916211
     }
 }
