@@ -1,21 +1,23 @@
 {
     "scenario": "real_only",
-    "model_class": "Conv1dAutoencoder",
-    "input_channels": 62,
+    "model_class": "HybridConv1DAutoencoder",
+    "cont_channels": 31,
+    "disc_dim": 124,
     "seq_len": 30,
     "window_size": 30,
     "stride": 5,
-    "epochs_run": 50,
-    "final_val_loss": 0.15760862838942558,
-    "val_error_mean": 0.15683621168136597,
-    "val_error_p95": 1.566847801208496,
-    "val_error_p99": 1.6879525184631348,
+    "alpha": 0.30557233645075166,
+    "epochs_run": 65,
+    "best_val_loss": 0.35357960453256965,
+    "val_error_mean": 0.3546450138092041,
+    "val_error_p95": 3.9640252590179443,
+    "val_error_p99": 4.153988838195801,
     "tau_dict": {
-        "p90": 0.11206459254026413,
-        "p95": 1.566847801208496,
-        "p97_5": 1.665655255317688,
-        "p99": 1.6879525184631348,
-        "p99_5": 1.6909979581832886
+        "p90": 0.2859010398387909,
+        "p95": 3.9640252590179443,
+        "p97_5": 4.075315952301025,
+        "p99": 4.153988838195801,
+        "p99_5": 4.177723407745361
     },
     "continuous_cols": [
         "LIT101.Pv",
@@ -147,19 +149,13 @@
         "P5_STATE",
         "P6_STATE"
     ],
-    "train_shape": [
+    "train_shape_c": [
         3069,
-        62,
+        31,
         30
     ],
-    "val_shape": [
-        1019,
-        62,
-        30
-    ],
-    "test_shape": [
-        1019,
-        62,
-        30
+    "train_shape_d": [
+        3069,
+        124
     ]
 }
