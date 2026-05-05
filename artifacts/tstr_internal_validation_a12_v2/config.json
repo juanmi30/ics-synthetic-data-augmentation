@@ -7,6 +7,7 @@
     "window_size": 30,
     "stride": 5,
     "alpha": 0.30557233645075166,
+    "block_minutes": 20,
     "epochs_map": {
         "real_only": 80,
         "synthetic_only": 80,
@@ -31,12 +32,11 @@
         "epochs": 40,
         "alpha": 0.30557233645075166
     },
+    "detector_dir": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\models\\detectors\\conv1d_hybrid_a12_v2",
     "n_train_real": 3081,
     "n_synth_used": 3081,
     "n_val": 1055,
     "n_test": 868,
     "cont_channels": 31,
-    "disc_dim": 124,
-    "dataset": "SWaT A12 Mar 2026",
-    "timegan_dir": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\models\\timegan\\conv1d_hybrid_a12_v4"
+    "disc_dim": 124
 }
