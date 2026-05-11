@@ -1,0 +1,4 @@
+Escenario,Train windows,ROC-AUC,PR-AUC,F1,Recall,Precision,FPR,TP,FP,FN,TN,Ratio atk/norm,Tau optimo
+real_only,1532,0.8751,0.3138,0.475,0.808,0.336,0.185,236,466,56,2053,2.42,0.2314
+synthetic_only,1532,0.6983,0.1667,0.281,0.712,0.175,0.389,208,981,84,1538,0.83,0.201
+real_plus_synthetic,3064,0.8285,0.263,0.413,0.613,0.312,0.157,179,395,113,2124,2.08,0.141

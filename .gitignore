@@ -4,3 +4,11 @@ models/timegan/**/synthetic_*.csv
 # Ignore generated synth artifacts anywhere inside models/timegan
 models/timegan/**/synth_*.npy
 models/timegan/**/synth_*.csv
+# Synthetic artifacts / model outputs
+models/timegan/**/*.npy
+models/timegan/**/*.csv
+models/timegan/**/*synth*.npy
+models/timegan/**/*synth*.csv
+
+# Heavy SWaT Excel datasets
+data/clean/**/*.xlsx
