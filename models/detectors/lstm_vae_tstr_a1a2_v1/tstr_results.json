@@ -1,0 +1,79 @@
+{
+    "version": "lstm_vae_tstr_a1a2_v1",
+    "baseline": "lstm_vae_swat_a1a2_baseline_v2",
+    "timegan": "lstm_vae_a1a2_baseline_v2",
+    "normal_data": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Normal_v1.xlsx",
+    "attack_data": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Attack_v0.xlsx",
+    "eval_protocol": {
+        "excluded_ids": [],
+        "k": 13
+    },
+    "train_windows": {
+        "real_only": 59173,
+        "synthetic_only": 29587,
+        "real_plus_synthetic": 88760
+    },
+    "best_epochs": {
+        "real_only": 147,
+        "synthetic_only": 137,
+        "real_plus_synthetic": 88
+    },
+    "results": {
+        "real_only": {
+            "tau": 4.574202081566336,
+            "roc_auc": 0.8164835317268047,
+            "pr_auc": 0.7246262148244552,
+            "f1": 0.7477954144151538,
+            "recall": 0.5990815966089668,
+            "precision": 0.9947214076246188,
+            "fpr": 0.0004577357339029594,
+            "tp": 6784,
+            "fp": 36,
+            "fn": 4540,
+            "tn": 78612,
+            "ratio": 3.871624231338501
+        },
+        "synthetic_only": {
+            "tau": 4.322146333547094,
+            "roc_auc": 0.8102436671401578,
+            "pr_auc": 0.71274765659707,
+            "f1": 0.7423764457996802,
+            "recall": 0.5922818791946256,
+            "precision": 0.9943661971830838,
+            "fpr": 0.0004831654968975683,
+            "tp": 6707,
+            "fp": 38,
+            "fn": 4617,
+            "tn": 78610,
+            "ratio": 2.9580886363983154
+        },
+        "real_plus_synthetic": {
+            "tau": 2.928846563475305,
+            "roc_auc": 0.8043101740457533,
+            "pr_auc": 0.7196291699373518,
+            "f1": 0.7465790913595406,
+            "recall": 0.6022606852702173,
+            "precision": 0.9818600633457963,
+            "fpr": 0.0016020750686603581,
+            "tp": 6820,
+            "fp": 126,
+            "fn": 4504,
+            "tn": 78522,
+            "ratio": 3.2766613960266113
+        }
+    },
+    "delta_vs_real_only": {
+        "synthetic_only": {
+            "delta_auc": -0.0062,
+            "delta_f1": -0.005,
+            "delta_rec": -0.007,
+            "delta_fpr": 0.0
+        },
+        "real_plus_synthetic": {
+            "delta_auc": -0.0122,
+            "delta_f1": -0.001,
+            "delta_rec": 0.003,
+            "delta_fpr": 0.001
+        }
+    }
+}
