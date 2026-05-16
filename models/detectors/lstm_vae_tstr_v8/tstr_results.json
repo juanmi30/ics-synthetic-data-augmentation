@@ -1,0 +1,80 @@
+{
+    "version": "lstm_vae_tstr_v8",
+    "baseline": "lstm_vae_a12_baseline_v6",
+    "timegan": "lstm_vae_a12_baseline_v1_v18",
+    "eval_protocol": {
+        "excluded_ids": [
+            1.0,
+            2.0
+        ],
+        "k": 13
+    },
+    "train_windows": {
+        "real_only": 7150,
+        "synthetic_only": 7150,
+        "real_plus_synthetic": 14300
+    },
+    "best_epochs": {
+        "real_only": 24,
+        "synthetic_only": 146,
+        "real_plus_synthetic": 120
+    },
+    "results": {
+        "real_only": {
+            "tau": 0.13880849869961434,
+            "roc_auc": 0.8668220545420585,
+            "pr_auc": 0.31102439237915547,
+            "f1": 0.48381400820245224,
+            "recall": 0.9625292740044584,
+            "precision": 0.3231132075471444,
+            "fpr": 0.24010039040713219,
+            "tp": 411,
+            "fp": 861,
+            "fn": 16,
+            "tn": 2725,
+            "ratio": 2.403482675552368
+        },
+        "synthetic_only": {
+            "tau": 0.1060848816278133,
+            "roc_auc": 0.6284020213920647,
+            "pr_auc": 0.15758938299676284,
+            "f1": 0.24515128003440495,
+            "recall": 0.7400468384073209,
+            "precision": 0.14690841469083463,
+            "fpr": 0.5117122141661876,
+            "tp": 316,
+            "fp": 1835,
+            "fn": 111,
+            "tn": 1751,
+            "ratio": 0.9498696327209473
+        },
+        "real_plus_synthetic": {
+            "tau": 0.02287305736161293,
+            "roc_auc": 0.788133268722628,
+            "pr_auc": 0.27334944023036983,
+            "f1": 0.3748338502129737,
+            "recall": 0.990632318500939,
+            "precision": 0.2311475409835939,
+            "fpr": 0.3923591745677526,
+            "tp": 423,
+            "fp": 1407,
+            "fn": 4,
+            "tn": 2179,
+            "ratio": 2.3455469608306885
+        }
+    },
+    "delta_vs_real_only": {
+        "synthetic_only": {
+            "delta_auc": -0.2384,
+            "delta_f1": -0.239,
+            "delta_rec": -0.222,
+            "delta_fpr": 0.272
+        },
+        "real_plus_synthetic": {
+            "delta_auc": -0.0787,
+            "delta_f1": -0.109,
+            "delta_rec": 0.028,
+            "delta_fpr": 0.152
+        }
+    }
+}

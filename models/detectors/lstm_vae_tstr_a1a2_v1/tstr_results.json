@@ -2,78 +2,94 @@
     "version": "lstm_vae_tstr_a1a2_v1",
     "baseline": "lstm_vae_swat_a1a2_baseline_v2",
     "timegan": "lstm_vae_a1a2_baseline_v2",
-    "normal_data": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Normal_v1.xlsx",
-    "attack_data": "c:\\Users\\j.manriquec\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Attack_v0.xlsx",
+    "normal_data": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Normal_v1.xlsx",
+    "attack_data": "d:\\Documentos\\Uniandes\\12 Semestre\\PROYECTO DE GRADO\\repoPrincipal\\ics-synthetic-data-augmentation\\data\\clean\\SWaT.A1 & A2_Dec 2015\\SWaT_Dataset_Attack_v0.xlsx",
     "eval_protocol": {
-        "excluded_ids": [],
-        "k": 13
+        "excluded_ids": [
+            4,
+            5,
+            6,
+            9,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19,
+            20,
+            24,
+            29,
+            34,
+            38
+        ],
+        "k": 3
     },
     "train_windows": {
-        "real_only": 59173,
+        "real_only": 29587,
         "synthetic_only": 29587,
-        "real_plus_synthetic": 88760
+        "real_plus_synthetic": 59174
     },
     "best_epochs": {
-        "real_only": 147,
-        "synthetic_only": 137,
-        "real_plus_synthetic": 88
+        "real_only": 137,
+        "synthetic_only": 118,
+        "real_plus_synthetic": 91
     },
     "results": {
         "real_only": {
-            "tau": 4.574202081566336,
-            "roc_auc": 0.8164835317268047,
-            "pr_auc": 0.7246262148244552,
-            "f1": 0.7477954144151538,
-            "recall": 0.5990815966089668,
-            "precision": 0.9947214076246188,
-            "fpr": 0.0004577357339029594,
-            "tp": 6784,
-            "fp": 36,
-            "fn": 4540,
-            "tn": 78612,
-            "ratio": 3.871624231338501
+            "tau": 4.273488847961668,
+            "roc_auc": 0.8813610817456039,
+            "pr_auc": 0.8021479877908179,
+            "f1": 0.8175919249695354,
+            "recall": 0.695847821640403,
+            "precision": 0.9909699970870669,
+            "fpr": 0.0007883226528328735,
+            "tp": 3402,
+            "fp": 31,
+            "fn": 1487,
+            "tn": 39293,
+            "ratio": 3.718458414077759
         },
         "synthetic_only": {
-            "tau": 4.322146333547094,
-            "roc_auc": 0.8102436671401578,
-            "pr_auc": 0.71274765659707,
-            "f1": 0.7423764457996802,
-            "recall": 0.5922818791946256,
-            "precision": 0.9943661971830838,
-            "fpr": 0.0004831654968975683,
-            "tp": 6707,
-            "fp": 38,
-            "fn": 4617,
-            "tn": 78610,
-            "ratio": 2.9580886363983154
+            "tau": 3.736151358099565,
+            "roc_auc": 0.8777098145819182,
+            "pr_auc": 0.789696152022073,
+            "f1": 0.8105428605489079,
+            "recall": 0.6856207813458645,
+            "precision": 0.9911295091661445,
+            "fpr": 0.0007628928898382647,
+            "tp": 3352,
+            "fp": 30,
+            "fn": 1537,
+            "tn": 39294,
+            "ratio": 2.982172966003418
         },
         "real_plus_synthetic": {
-            "tau": 2.928846563475305,
-            "roc_auc": 0.8043101740457533,
-            "pr_auc": 0.7196291699373518,
-            "f1": 0.7465790913595406,
-            "recall": 0.6022606852702173,
-            "precision": 0.9818600633457963,
-            "fpr": 0.0016020750686603581,
-            "tp": 6820,
-            "fp": 126,
-            "fn": 4504,
-            "tn": 78522,
-            "ratio": 3.2766613960266113
+            "tau": 3.098331654671587,
+            "roc_auc": 0.8705047991564705,
+            "pr_auc": 0.7829199260476398,
+            "f1": 0.8198683422614247,
+            "recall": 0.7005522601758908,
+            "precision": 0.988170802077294,
+            "fpr": 0.0010426202827789619,
+            "tp": 3425,
+            "fp": 41,
+            "fn": 1464,
+            "tn": 39283,
+            "ratio": 3.3148181438446045
         }
     },
     "delta_vs_real_only": {
         "synthetic_only": {
-            "delta_auc": -0.0062,
-            "delta_f1": -0.005,
-            "delta_rec": -0.007,
-            "delta_fpr": 0.0
+            "delta_auc": -0.0037,
+            "delta_f1": -0.007,
+            "delta_rec": -0.01,
+            "delta_fpr": -0.0
         },
         "real_plus_synthetic": {
-            "delta_auc": -0.0122,
-            "delta_f1": -0.001,
-            "delta_rec": 0.003,
-            "delta_fpr": 0.001
+            "delta_auc": -0.0109,
+            "delta_f1": 0.002,
+            "delta_rec": 0.005,
+            "delta_fpr": 0.0
         }
     }
 }

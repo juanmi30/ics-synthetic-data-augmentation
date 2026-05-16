@@ -1,0 +1,12 @@
+attack_id,nombre,n,excluido,det_real_only,det_synthetic_only,det_real_plus_synthetic
+1.0,Stage 5 Valve Manipulation — M,51,True,0.0,0.0,0.0
+2.0,Stage 1 Flow Disruption — MV10,51,True,0.0,0.0,76.5
+3.0,Florida Water Plant Scenario —,51,False,76.5,54.9,76.5
+4.0,Tank Overflow via LIT101 Spoof,51,False,76.5,0.0,68.6
+5.0,Stage 5 Valve Manipulation — M,52,False,76.9,5.8,76.9
+6.0,Tank Overflow via LIT101 Spoof,21,False,42.9,42.9,42.9
+7.0,Stage 2 Parallel Pump Override,47,False,74.5,74.5,74.5
+8.0,Reverse Osmosis Backwash Diver,51,False,76.5,76.5,76.5
+9.0,Forced Backwash Trigger via DP,52,False,76.9,76.9,76.9
+10.0,Multi-Value Level Oscillation ,51,False,76.5,76.5,76.5
+11.0,AIT402 High-Value Spoof Start ,51,False,76.5,76.5,76.5
