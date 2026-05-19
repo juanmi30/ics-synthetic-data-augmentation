@@ -1,0 +1,4 @@
+escenario,silhouette,calinski_harabasz,davies_bouldin,ratio_scores
+real_only,0.2647,1382.41,1.7722,2.207
+synthetic_only,0.1779,765.92,2.2864,1.926
+real_plus_synthetic,0.2146,1017.38,2.0466,2.41
