@@ -1,4 +1,0 @@
-Escenario,Train_wins,ROC-AUC,PR-AUC,F1,Recall,Precision,FPR,TP,FP,FN
-real_only,29587,0.8814,0.8021,0.818,0.696,0.991,0.001,3402,31,1487
-synthetic_only,29587,0.8777,0.7897,0.811,0.686,0.991,0.001,3352,30,1537
-real_plus_synthetic,59174,0.8705,0.7829,0.82,0.701,0.988,0.001,3425,41,1464
